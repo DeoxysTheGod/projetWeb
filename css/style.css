@@ -1,3 +1,31 @@
-.charm_inventory {
-    height: 20px;
+body {
+    background-color: #16161a;
+    color: #e8e3e0;
+}
+
+/* Page de charme style */
+
+.body_charm {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-image: url("../menuNav/charmes/img/inventoryCharm.png");
+}
+
+.charm_section {
+    position: absolute;
+    top: 535px;
+    left: 170px;
+}
+
+.even_charm {
+    position: relative;
+    left: 55px;
+}
+
+.inventory_title {
+    text-align: center;
+}
+
+.inventory_charm {
+    height: 85px;
 }
