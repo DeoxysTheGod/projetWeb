@@ -19,6 +19,12 @@ body {
     left: 150px;
 }
 
+.charm_section > table {
+    text-align: center;
+    border-collapse: separate;
+    text-indent: initial;
+}
+
 .even_charm {
     position: relative;
     left: 55px;
