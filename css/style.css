@@ -1,6 +1,6 @@
 body {
     background-color: #16161a;
-    color: #e8e3e0;
+    color: #ffffff;
 }
 
 /* Page de charme style */
@@ -8,13 +8,15 @@ body {
 .body_charm {
     background-color: #000000;
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
     background-image: url("../menuNav/charmes/img/inventoryCharm.png");
 }
 
 .charm_section {
-    position: absolute;
-    top: 535px;
-    left: 170px;
+    position:absolute;
+    top: 470px;
+    left: 150px;
 }
 
 .even_charm {
@@ -28,4 +30,8 @@ body {
 
 .inventory_charm {
     height: 85px;
+}
+
+.inventory_charm:hover {
+    filter: drop-shadow(0 0 0.5rem #ffffff);
 }
