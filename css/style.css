@@ -29,6 +29,7 @@ body {
 }
 
 .inventory_charm {
+    border-spacing: 2px;
     height: 85px;
 }
 
