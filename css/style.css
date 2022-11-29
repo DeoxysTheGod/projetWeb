@@ -1,11 +1,14 @@
 body {
     background-color: #16161a;
     color: #ffffff;
-    cursor: url('pointer.png'), default;
 }
 
-:hover {
-    cursor: url('pointer.png'), default;
+html {
+    cursor: url('cursorDefault.svg'), auto;
+}
+
+a:hover {
+    cursor: url('cursorHover.svg'), auto;
 }
 
 /* Page de charme style */
