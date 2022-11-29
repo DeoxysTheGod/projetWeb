@@ -5,18 +5,16 @@ body {
 
 /* Page de charme style */
 
-.body_charm {
-    background-color: #000000;
+.inventory_zone {
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-attachment: fixed;
     background-image: url("../menuNav/charmes/img/inventoryCharm.png");
+    background-color: #000000;
 }
 
 .charm_section {
-    position:absolute;
-    top: 470px;
-    left: 150px;
+    position: relative;
+    top: 390px;
+    left: 160px;
 }
 
 .charm_section > table {
@@ -25,13 +23,13 @@ body {
     text-indent: initial;
 }
 
-.even_charm {
+.charm_section tr:nth-child(even) {
     position: relative;
     left: 55px;
 }
-
 .inventory_title {
-    text-align: center;
+    position: relative;
+    left: 55rem;
 }
 
 .inventory_charm {
