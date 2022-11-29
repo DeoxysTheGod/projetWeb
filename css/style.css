@@ -15,8 +15,9 @@ a:hover {
 
 .inventory_zone {
     background-repeat: no-repeat;
-    background-image: url("../menuNav/charmes/img/inventoryCharm.png");
-    background-color: #000000;
+    background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
+    background-size: auto;
+    /*background-color: #000000;*/
 }
 
 .charm_section {
@@ -46,5 +47,5 @@ a:hover {
 }
 
 .inventory_charm:hover {
-    filter: drop-shadow(0 0 0.5rem #ffffff);
+    filter: drop-shadow(0 0 1rem #4962a0);
 }
