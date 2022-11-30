@@ -3,20 +3,27 @@ body {
     color: #ffffff;
 }
 
+html {
+    cursor: url('cursorDefault.svg'), auto;
+}
+
+a:hover {
+    cursor: url('cursorHover.svg'), auto;
+}
+
 /* Page de charme style */
 
-.body_charm {
-    background-color: #000000;
+.inventory_zone {
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-attachment: fixed;
-    background-image: url("../menuNav/charmes/img/inventoryCharm.png");
+    background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
+    background-size: auto;
+    /*background-color: #000000;*/
 }
 
 .charm_section {
-    position:absolute;
-    top: 470px;
-    left: 150px;
+    position: relative;
+    top: 390px;
+    left: 160px;
 }
 
 .charm_section > table {
@@ -25,13 +32,13 @@ body {
     text-indent: initial;
 }
 
-.even_charm {
+.charm_section tr:nth-child(even) {
     position: relative;
     left: 55px;
 }
-
 .inventory_title {
-    text-align: center;
+    position: relative;
+    left: 55rem;
 }
 
 .inventory_charm {
@@ -40,6 +47,7 @@ body {
 }
 
 .inventory_charm:hover {
+<<<<<<< HEAD
     filter: drop-shadow(0 0 0.5rem #ffffff);
 }
 
@@ -51,3 +59,7 @@ li {
 header {
     text-align: center;
 }
+=======
+    filter: drop-shadow(0 0 1rem #4962a0);
+}
+>>>>>>> 8408d23c728721bf3b1ec8d1dd7b5b2a75998213
