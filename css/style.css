@@ -42,3 +42,12 @@ body {
 .inventory_charm:hover {
     filter: drop-shadow(0 0 0.5rem #ffffff);
 }
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
