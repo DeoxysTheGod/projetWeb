@@ -75,7 +75,7 @@ li {
 }
 
 .game_menu > li > a:hover {
-    text-shadow: 0 0 0.5rem #ffffff;
+    text-shadow: 0 0 1rem #ffffff;
 }
 
 header {
