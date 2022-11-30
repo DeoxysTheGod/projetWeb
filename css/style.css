@@ -47,19 +47,27 @@ a:hover {
 }
 
 .inventory_charm:hover {
-<<<<<<< HEAD
+
     filter: drop-shadow(0 0 0.5rem #ffffff);
 }
 
 li {
     list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.game_menu > li > a {
     text-decoration: none;
 }
 
 header {
     text-align: center;
 }
-=======
-    filter: drop-shadow(0 0 1rem #4962a0);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
->>>>>>> 8408d23c728721bf3b1ec8d1dd7b5b2a75998213
+
