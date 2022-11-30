@@ -65,6 +65,7 @@ li {
 .game_menu > li {
     text-align: center;
     padding: 10px;
+    color: #ffffff;
 }
 
 .game_menu > li > a {
