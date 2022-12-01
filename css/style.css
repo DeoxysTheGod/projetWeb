@@ -75,7 +75,7 @@ li {
 }
 
 .game_menu > li > a:hover {
-    text-shadow: 0 0 1rem #ffffff;
+    text-shadow: 0 0 0.5rem #ffffff;
 }
 
 header {
@@ -88,3 +88,12 @@ header {
     justify-content: space-between;
 }
 
+
+.image {
+    display: flex;
+}
+
+.carousel {
+    width: 640px;
+    overflow: auto;
+}
