@@ -10,6 +10,13 @@ body {
     background-size: 100%;
 }
 
+.menu_game {
+    background-color: #16161a;
+    background-image: url("../img/Menu_Theme_Godmaster.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 html {
     cursor: url('cursorDefault.svg'), auto;
 }
