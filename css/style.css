@@ -88,12 +88,3 @@ header {
     justify-content: space-between;
 }
 
-
-.image {
-    display: flex;
-}
-
-.carousel {
-    width: 640px;
-    overflow: auto;
-}
