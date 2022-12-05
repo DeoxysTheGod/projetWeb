@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "Trajan";
+    font-weight: 400;
+    src: url("../fonts/trajanProRegular/TrajanProRegular.ttf") format("truetype");
+}
+
 body {
+    
     background-color: #16161a;
     color: #ffffff;
 }
@@ -18,6 +25,7 @@ body {
 }
 
 html {
+    font-family: "Trajan";
     cursor: url('cursorDefault.svg'), auto;
 }
 
@@ -52,7 +60,7 @@ a:hover {
 }
 .inventory_title {
     position: relative;
-    left: 55rem;
+    left: 54.3rem;
 }
 
 .inventory_charm {
@@ -85,7 +93,27 @@ li {
     text-shadow: 0 0 0.5rem #ffffff;
 }
 
-header {
+/* middle arrow inventory */
+
+.arrow_link > .left_middle_arrow {
+
+    position: absolute;
+    height: 8rem;
+    width: 3.5rem;
+    left: 4.5rem;
+    top: 23.8rem;
+}
+
+.arrow_link > .right_middle_arrow {
+
+    position: absolute;
+    height: 8rem;
+    width: 3.5rem;
+    right: 4.5rem;
+    top: 23.8rem;
+}
+
+header > h1 {
     text-align: center;
 }
 
