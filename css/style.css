@@ -40,38 +40,50 @@ a:hover {
     background-repeat: no-repeat;
     background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
     background-size: auto;
-    /*background-color: #000000;*/
+    background-color: #16161a;
 }
 
 .charm_section {
     position: relative;
     top: 390px;
-    left: 160px;
+    left: 130px;
 }
 
-.charm_section > table {
-    text-align: center;
-    border-collapse: separate;
-    text-indent: initial;
+.charm_section {
+    display: grid;
+    grid-template-columns: repeat(10, 93px);
+    grid-template-rows: 1fr repeat(4, auto);
 }
 
-.charm_section tr:nth-child(even) {
-    position: relative;
-    left: 55px;
-}
 .inventory_title {
     position: relative;
     left: 54.3rem;
 }
 
 .inventory_charm {
-    border-spacing: 2px;
     height: 85px;
 }
 
 .inventory_charm:hover {
 
     filter: drop-shadow(0 0 0.5rem #ffffff);
+}
+
+.info_charm {
+    position: absolute;
+    top: 7rem;
+    right: 5rem;
+    height: 30rem;
+    width: 23rem;
+    display: block;
+}
+
+.inventory_charm:hover + .info_charm {
+    position: absolute;
+    right: 2rem;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
 }
 
 li {
@@ -93,6 +105,8 @@ li {
 .game_menu > li > a:hover {
     text-shadow: 0 0 0.5rem #ffffff;
 }
+
+
 
 /* middle arrow inventory */
 
