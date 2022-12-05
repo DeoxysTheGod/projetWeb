@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Grim Maître de la troupe </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta charset="utf-8"/>
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" type="image/png" href="logo.png">
+        
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../..menuNav/capacites/capacites.html">Capacités</a></li>
+                <li><a href="../..menuNav/map/map.html">Map</a></li>
+                <li><a href="../../menuNav/charmes/charmes.html">Charmes</a></li>
+                <li><a href="../bestiaire/bestiaire.html">Bestiaire</a></li>
+            </ul> 
+        </nav>
+        <h1>Grim Maître de la troupe</h1>
+    </body>
+</html>
