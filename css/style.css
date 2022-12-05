@@ -10,9 +10,9 @@ body {
     background-size: 100%;
 }
 
-.menu_game {
+.game_menu_body {
     background-color: #16161a;
-    background-image: url("../img/Menu_Theme_Godmaster.png");
+    background-image: url("../img/menuThemeGodmaster.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
