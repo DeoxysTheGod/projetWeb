@@ -30,9 +30,8 @@ html {
     cursor: url('cursorDefault.svg'), auto;
 }
 
-a:hover {
+html body a:hover {
     cursor: url('cursorDefault.svg'), auto;
-    cursor: white;
 }
 
 /* Page de charme style */
