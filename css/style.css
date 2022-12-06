@@ -25,6 +25,20 @@ body {
     background-attachment: fixed;
 }
 
+.game_menu_body > h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.game_menu_body > img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+}
+
 html {
     font-family: "Trajan";
     cursor: url('cursorDefault.svg'), auto;
