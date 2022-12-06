@@ -19,6 +19,98 @@ html body a:hover {
     cursor: url('cursorDefault.svg'), auto;
 }
 
+/* Header */
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+header {
+    width: 100%;
+    background-color: #000000;
+}
+
+header > img {
+    width: 13%;
+    display: block;
+    margin: auto;
+}
+
+/* Navigation menu */
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000000;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    margin-block-start: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: #8f8e8e;
+    border-bottom: 2px solid #2f2f2f;
+}
+
+.under_dir {
+    display: none;
+    box-shadow: 0px 1px 2px #2f2f2f;
+    background-color: #202020;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .under_dir {
+    display: block;
+}
+
+.under_dir li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.under_dir a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.under_dir a:hover {
+    border-bottom: none;
+    background-color: rgba(40,40,40,0.1);
+}
+
+.unwrap_menu > a::after {
+    font-size: 12px;
+}
+
 /* Menu */
 
 .menu_body {
@@ -49,69 +141,73 @@ html body a:hover {
 }
 
 /* Page de charme style */
+@media (min-width: 1855px) {
+    .inventory_zone {
+        background-repeat: no-repeat;
+        background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
+        background-position-x: left;
+        background-color: #000000;
+    }
 
-.inventory_zone {
-    background-repeat: no-repeat;
-    background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
-    background-position-x: left;
-    background-color: #000000;
+    .charm_section {
+        position: relative;
+        top: 430px;
+        left: 170px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(10, 93px);
+        grid-template-rows: 1fr repeat(4, auto);
+    }
+
+    .inventory_title {
+        position: relative;
+        margin: auto;
+        width: auto;
+        top: 17px;
+        left:54.8rem
+    }
+
+    .inventory_charm {
+        height: 85px;
+    }
+
+    .charm_odd {
+        padding-left: 50px;
+    }
+
+    .inventory_charm:hover {
+        filter: drop-shadow(0 0 0.5rem #ffffff);
+    }
+
+    .info_charm {
+        position: absolute;
+        margin: 20px;
+        top: -320px;
+        left: 65rem;
+        height: 30rem;
+        width: 30rem;
+        display: none;
+    }
+
+    .charm_section a:hover + .info_charm {
+        display: block;
+    }
+
+    .info_charm > h2 {
+        text-align: center;
+    }
+
+    .info_charm > img {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 120px;
+    }
+
+    .info_charm > p {
+        padding: 10px;
+    }
 }
-
-.charm_section {
-    position: relative;
-    top: 390px;
-    left: 140px;
-}
-
-.charm_section {
-    display: grid;
-    grid-template-columns: repeat(10, 93px);
-    grid-template-rows: 1fr repeat(4, auto);
-}
-
-.inventory_title {
-    position: relative;
-    top: 5px;
-    left:54.5rem
-}
-
-.inventory_charm {
-    height: 85px;
-}
-
-.inventory_charm:hover {
-
-    filter: drop-shadow(0 0 0.5rem #ffffff);
-}
-
-.info_charm {
-    position: absolute;
-    top: -350px;
-    left: 65rem;
-    height: 30rem;
-    width: 30rem;
-    display: none;
-}
-
-.charm_section a:hover + .info_charm {
-    display: block;
-}
-
-.info_charm > h2 {
-    text-align: center;
-}
-
-.info_charm > img {
-    display: block;
-    margin: auto;
-    padding: 10px;
-    width: 120px;
-}
-
-.info_charm > p {
-    padding: 10px;
-}
-
 /* général */
 
 li {
@@ -152,19 +248,8 @@ li {
     position: absolute;
     height: 8rem;
     width: 3.5rem;
-    right: 4.5rem;
+    left: 1800px;
     top: 23.8rem;
 }
 
 /* --- */
-
-header > h1 {
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
