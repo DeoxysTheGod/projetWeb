@@ -33,10 +33,9 @@ body {
 }
 
 .game_menu_body > img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    text-align: center;
+    position: relative;
+    right: 50%;
+    left: 50%;
 }
 
 html {
@@ -53,14 +52,14 @@ html body a:hover {
 .inventory_zone {
     background-repeat: no-repeat;
     background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
-    background-size: auto;
-    background-color: #16161a;
+    background-position-x: left;
+    background-color: #000000;
 }
 
 .charm_section {
     position: relative;
     top: 390px;
-    left: 130px;
+    left: 140px;
 }
 
 .charm_section {
@@ -71,7 +70,8 @@ html body a:hover {
 
 .inventory_title {
     position: relative;
-    left: 54.3rem;
+    top: 5px;
+    left:54.5rem
 }
 
 .inventory_charm {
@@ -85,19 +85,30 @@ html body a:hover {
 
 .info_charm {
     position: absolute;
-    top: 7rem;
-    right: 5rem;
+    top: -350px;
+    left: 65rem;
     height: 30rem;
-    width: 23rem;
+    width: 30rem;
+    display: none;
+}
+
+.charm_section a:hover + .info_charm {
     display: block;
 }
 
-.inventory_charm:hover + .info_charm {
-    position: absolute;
-    right: 2rem;
-    height: 30rem;
-    width: 30rem;
-    display: flex;
+.info_charm > h2 {
+    text-align: center;
+}
+
+.info_charm > img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 120px;
+}
+
+.info_charm > p {
+    padding: 10px;
 }
 
 li {
@@ -141,6 +152,8 @@ li {
     right: 4.5rem;
     top: 23.8rem;
 }
+
+/* --- */
 
 header > h1 {
     text-align: center;
