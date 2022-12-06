@@ -30,6 +30,10 @@ html {
     cursor: url('cursorDefault.svg'), auto;
 }
 
+a:hover {
+    cursor: url('cursorDefault.svg'), auto;
+}
+
 /* Page de charme style */
 
 .inventory_zone {
