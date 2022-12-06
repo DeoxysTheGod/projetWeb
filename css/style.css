@@ -10,34 +10,6 @@ body {
     color: #ffffff;
 }
 
-.menu_body {
-    background-color: #16161a;
-    background-image: url("../img/menuTheme.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.game_menu_body {
-    background-color: #16161a;
-    background-image: url("../img/menuThemeGodmaster.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-.game_menu_body > h1 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    text-align: center;
-}
-
-.game_menu_body > img {
-    position: relative;
-    right: 50%;
-    left: 50%;
-}
-
 html {
     font-family: "Trajan";
     cursor: url('cursorDefault.svg'), auto;
@@ -45,6 +17,35 @@ html {
 
 html body a:hover {
     cursor: url('cursorDefault.svg'), auto;
+}
+
+/* Menu */
+
+.menu_body {
+    background-color: #16161a;
+    background-image: url("../img/menuTheme.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Jouer */
+
+.game_menu_body {
+    background-color: #000000;
+    background-image: url("../img/menuThemeGodmaster.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.game_menu_body > h1 {
+    text-align: center;
+}
+
+.game_menu_body > img {
+    display: block;
+    margin: auto;
+    width: 40%;
 }
 
 /* Page de charme style */
@@ -110,6 +111,8 @@ html body a:hover {
 .info_charm > p {
     padding: 10px;
 }
+
+/* général */
 
 li {
     list-style: none;
