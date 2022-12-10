@@ -4,6 +4,12 @@
     src: url("../fonts/trajanProRegular/TrajanProRegular.ttf") format("truetype");
 }
 
+:root {
+    --inventoryTitleSize: 30px;
+    --inventoryInformationTitleSize: 25px;
+    --inventoryInformationSize: 20px;
+}
+
 body {
     
     background-color: #16161a;
@@ -114,6 +120,25 @@ nav > ul li:hover .under_dir {
     background-size: 100%;
 }
 
+.menu_body section {
+    position: relative;
+    width: fit-content;
+    top: 80px;
+    margin: auto;
+}
+
+.menu_body section img {
+    width: 60rem;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.menu_body .game_menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
 /* Jouer */
 
 .game_menu_body {
@@ -134,72 +159,15 @@ nav > ul li:hover .under_dir {
     width: 40%;
 }
 
-/* Page de charme style */
+/* Inventaire général */
 @media (min-width: 1855px) {
-    .inventory_zone {
-        background-repeat: no-repeat;
-        background-image: url("../menuNav/charmes/img/inventoryCharm2.png");
-        background-position-x: left;
-        background-position-y: 55px;
-        background-color: #000000;
-    }
-
-    .charm_section {
-        position: relative;
-        top: 430px;
-        left: 170px;
-        display: grid;
-        width: fit-content;
-        grid-template-columns: repeat(10, 93px);
-        grid-template-rows: 1fr repeat(4, auto);
-    }
-
     .inventory_title {
-        display: inline;
-        position: relative;
-        top: 17px;
-        left:54.8rem
-    }
-
-    .inventory_charm {
-        height: 85px;
-    }
-
-    .charm_odd {
-        padding-left: 50px;
-    }
-
-    .inventory_charm:hover {
-        filter: drop-shadow(0 0 0.5rem #ffffff);
-    }
-
-    .info_charm {
-        position: absolute;
-        margin: 20px;
-        top: -320px;
-        left: 65rem;
-        height: 30rem;
-        width: 30rem;
-        display: none;
-    }
-
-    .charm_section a:hover + .info_charm {
-        display: block;
-    }
-
-    .info_charm > h2 {
         text-align: center;
-    }
-
-    .info_charm > img {
         display: block;
         margin: auto;
-        padding: 10px;
-        width: 120px;
-    }
-
-    .info_charm > p {
-        padding: 10px;
+        position: relative;
+        font-size: var(--inventoryTitleSize);
+        top: 20px;
     }
 
     /* middle arrow inventory */
@@ -221,57 +189,187 @@ nav > ul li:hover .under_dir {
     }
 }
 
+
+/* Page de charme style */
+@media (min-width: 1855px) {
+    .inventory_zone {
+        background-repeat: no-repeat;
+        background-image: url("../menuNav/img/charmeBg.png");
+        background-position-x: left;
+        background-color: #000000;
+    }
+
+    .charm_section {
+        position: relative;
+        top: 450px;
+        left: 170px;
+        display: grid;
+        width: fit-content;
+        grid-template-columns: repeat(10, 93px);
+        grid-template-rows: 1fr repeat(4, auto);
+    }
+
+    .inventory_charm {
+        height: 85px;
+    }
+
+    .charm_odd {
+        padding-left: 50px;
+    }
+
+    .inventory_charm:hover {
+        filter: drop-shadow(0 0 0.5rem #68aafd);
+    }
+
+    .charm_section .info_charm {
+        position: fixed;
+        margin: 20px;
+        top: 12rem;
+        left: 75rem;
+        height: 30rem;
+        width: 30rem;
+        display: none;
+    }
+
+    .charm_section a:hover + .info_charm {
+        display: block;
+    }
+
+    .info_charm > h2 {
+        font-size: var(--inventoryInformationTitleSize);
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
+    .info_charm > img {
+        display: block;
+        margin: auto;
+        padding: 0 0 20px 0;
+        width: 120px;
+    }
+
+    .info_charm > p {
+        font-size: var(--inventoryInformationSize);
+        padding: 10px;
+    }
+}
+
 /* Bestiaire */
 
 @media (min-width: 1855px) {
-    .bestiaire_zone::-webkit-scrollbar {
+    .bestiaire_body {
+        background-color: #000000;
+        background-image: url("../menuNav/img/bestiaireBg.png");
+        background-repeat: no-repeat;
+    }
+    .bestiaire_section::-webkit-scrollbar {
         width: 5px;
     }
-    
-    .bestiaire_zone::-webkit-scrollbar-thumb {
+    /*
+    .bestiaire_section::-webkit-scrollbar-thumb {
         background:rgb(255, 255, 255); 
         border-radius: 10px;
     }
     
-    .bestiaire_zone::-webkit-scrollbar-thumb:hover {
+    .bestiaire_section::-webkit-scrollbar-thumb:hover {
         background:rgb(54, 56, 58); 
     }
-
-    .bestiaire_zone {
+    */
+    .bestiaire_section {
         overflow: hidden;
         overflow-y: scroll;
     }
+
+    .bestiaire_section .info_bestiaire_2 {
+        position: fixed;
+        margin: 20px;
+        top: 12rem;
+        left: 82rem;
+        height: 30rem;
+        width: 28rem;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bestiaire_section .info_bestiaire_1 {
+        display: flex;
+        background: radial-gradient(closest-side, #68abfd6f, #68abfd47, #68abfd1b, #68abfd0b, transparent);
+        position: fixed;
+        margin: 20px;
+        top: 11.5rem;
+        left: 36rem;
+        height: 40.5rem;
+        width: 40.5rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bestiaire_section .info_bestiaire_1 > img {
+        width: max-content;
+    }
+
+    .bestiaire_section li:hover .info_bestiaire_2 {
+        display: flex;
+    }
+
+    .bestiaire_section li:hover .info_bestiaire_1 {
+        display: flex;
+    }
+
+    .info_bestiaire_2 > h2 {
+        font-size: var(--inventoryInformationTitleSize);
+        padding: 0 0 20px 0;
+    }
+
+    .info_bestiaire_2 > img {
+        padding: 0 0 20px 0;
+        width: 70%;
+    }
+
+    .info_bestiaire_2 > p {
+        padding: 10px;
+        font-size: var(--inventoryInformationSize);
+        height: 15rem;
+    }
 }
 
-.bestiaire_zone {
+.bestiaire_section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 5rem;
-    height: 500px;
-    width: 40rem;
+    position: relative;
+    top: 80px;
+    left: 160px;
+    height: 750px;
+    width: fit-content;
 }
 
-.bestiaire_body h1 {
-    padding: 2rem 0 5rem 5rem;
-}
-
-.bestiaire_zone li {
+.bestiaire_section li {
     display: flex;
     align-items: center;
-    padding: 1rem 0 1rem 0;
+    margin: 2px 0 2px 0;
+    padding: 1rem 0 1rem 2rem;
+    width: 22rem;
 }
 
-.bestiaire_zone li:hover {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+.bestiaire_section li:hover {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background: linear-gradient(to left, transparent, rgba(150,150,150,0.1), transparent);
 }
 
-.bestiaire_zone img {
+.bestiaire_section li:hover > img {
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+.bestiaire_section > img {
     height: 5rem;
 }
 
-.bestiaire_zone a {
+.bestiaire_section a {
     color: white;
     text-decoration: none;
     margin: 2rem;
@@ -279,6 +377,10 @@ nav > ul li:hover .under_dir {
 
 
 /* général */
+
+h1 {
+    font-size: 40px;
+}
 
 li {
     list-style: none;
