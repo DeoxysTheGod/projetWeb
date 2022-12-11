@@ -488,8 +488,5 @@ li {
 
 .trailer {
     width: 840px;
-    height: 680px;
-    left:840px;
-    top:42px;
-    position:absolute;   
+    height: 680px; 
 }
