@@ -37,7 +37,7 @@ html body a:hover {
 
 /* Navigation menu */
 
-nav {
+.header_nav {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -47,25 +47,25 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
+.header_nav > ul {
     margin-block-start: 0px;
     list-style: none;
 }
 
-nav ul li {
+.header_nav > ul > li {
     float: left;
     width: 25%;
     text-align: center;
     position: relative;
 }
 
-nav ul::after {
+.header_nav > ul::after {
     content: "";
     display: table;
     clear: both;
 }
 
-nav a {
+.header_nav a {
     display: block;
     text-decoration: none;
     color: white;
@@ -73,7 +73,7 @@ nav a {
     padding: 10px 0px;
 }
 
-nav a:hover {
+.header_nav a:hover {
     color: #8f8e8e;
     border-bottom: 2px solid #2f2f2f;
 }
@@ -86,7 +86,7 @@ nav a:hover {
     width: 100%;
 }
 
-nav > ul li:hover .under_dir {
+.header_nav > ul li:hover .under_dir {
     display: block;
 }
 
@@ -160,11 +160,13 @@ nav > ul li:hover .under_dir {
 }
 
 /* Inventaire général */
-@media (min-width: 1855px) {
+@media screen and (min-width: 1000px) and (min-height: 700px) {
     .inventory_title {
-        text-align: center;
+        --containerSize: 300px;
+        width: var(--containerSize);
+        left: calc(59.5rem - var(--containerSize)/2);
         display: block;
-        margin: auto;
+        text-align: center;
         position: relative;
         font-size: var(--inventoryTitleSize);
         top: 20px;
@@ -191,7 +193,7 @@ nav > ul li:hover .under_dir {
 
 
 /* Page de charme style */
-@media (min-width: 1855px) {
+@media screen and (min-width: 1000px) and (min-height: 700px) {
     .inventory_zone {
         background-repeat: no-repeat;
         background-image: url("../menuNav/img/charmeBg.png");
@@ -256,7 +258,7 @@ nav > ul li:hover .under_dir {
 
 /* Bestiaire */
 
-@media (min-width: 1855px) {
+@media screen and (min-width: 1000px) and (min-height: 700px) {
     .bestiaire_body {
         background-color: #000000;
         background-image: url("../menuNav/img/bestiaireBg.png");
@@ -375,6 +377,88 @@ nav > ul li:hover .under_dir {
     margin: 2rem;
 }
 
+/* Inventaire */
+
+@media screen and (min-width: 1000px) and (min-height: 700px) {
+    .inventory_section {
+        background-color: #000000;
+        background-image: url("../menuNav/img/inventoryBg.png");
+        background-repeat: no-repeat;
+    }
+
+    /* Capacité */
+    .skills {
+        position: absolute;
+        display: block;
+        width: 32rem;
+        top: 12rem;
+        left: 45rem;
+    }
+
+    .skills .capacity_img {
+        height: 6rem;
+    }
+
+    .skills > ul {
+        width: inherit;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-row-gap: 2rem;
+        justify-items: center;
+    }
+
+    .skills a:hover {
+        filter: drop-shadow(0 0 0.5rem #68aafd);
+    }
+
+    /* Sort */
+    .spell {
+        position: absolute;
+        position: absolute;
+        display: block;
+        width: 9rem;
+        top: 29.5rem;
+        left: 27rem;
+    }
+
+    .spell .spell_img {
+        width: 5.5rem;
+    }
+
+    .spell #spell_2 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .spell #spell_3 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .spell #spell_4 {
+        margin-top: 1rem;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .spell > ul {
+        width: inherit;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .spell > ul > li {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .spell a:hover {
+        filter: drop-shadow(0 0 0.5rem #68aafd);
+    }
+}
 
 /* général */
 
