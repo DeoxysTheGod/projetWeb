@@ -32,7 +32,8 @@ h1, h2, h3, h4, h5, h6, a {
     margin: 2rem;
 }
 
-.text_basique {
+
+/* .text_basique {
     font-size: 1.5rem;
     color : #f4f2f2;
     padding: 2.5rem; 
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6, a {
     border: rgba(255, 162, 0, 0.899) 0.1rem inset;
     border-radius: 1rem 1rem 1rem 1rem;
     margin: 2rem; 
-}
+} */
 
 html {
     cursor: url('cursorDefault.svg'), auto;
