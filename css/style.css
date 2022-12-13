@@ -29,11 +29,11 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 .header_nav {
-    margin: 2rem;
+    margin: 2.5rem;
 }
 
 
-/* .text_basique {
+.basic_text {
     font-size: 1.5rem;
     color : #f4f2f2;
     padding: 2.5rem; 
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6, a {
     border: rgba(255, 162, 0, 0.899) 0.1rem inset;
     border-radius: 1rem 1rem 1rem 1rem;
     margin: 2rem; 
-} */
+} 
 
 html {
     height: 100%;
@@ -174,17 +174,59 @@ html {
 }
 
 
-.game_menu_body > h1 {
+.game_menu_body > section h1 {
     text-align: center;
 }
 
-.game_menu_body > img {
+.game_menu_body > section img {
     display: block;
     margin: auto;
-    width: 40%;
+    width: 40width;
 }
 
-.trailer {
+.game_menu_body > section {
+    margin: 3.5rem;
+}
+
+.game_menu_body > section p {
+    font-size: 1.5rem;
+}
+
+.game_article {
+    margin: 1rem 0 15rem 0;
+    display: block;
+}
+
+.game_article ul {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 10rem;
+}
+
+.game_article li {
+    padding-right: 2rem ;
+    
+
+}
+
+.game_article .game_li_img {
+    margin-left: 0;
+    padding-right: 2rem ;
+    height: 10rem;
+}
+
+.dlc {
+    height: 20rem;
+}
+
+.game_box {
+    height: 20rem;
+}
+
+.game_menu_body > section .trailer {
     width: 640px;
     height: 480px; 
 }
