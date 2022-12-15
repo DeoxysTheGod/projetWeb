@@ -78,7 +78,7 @@ html {
     list-style: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 50rem) {
     .header_nav ul li {
         float: left;
         width: 15vw;
@@ -87,7 +87,7 @@ html {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 50rem) {
     .header_nav ul li {
         float: left;
         width: 40vw;
@@ -246,7 +246,7 @@ html {
 }
 
 /* Inventaire général */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 50rem) {
     .inventory_title {
         --containerSize: 20vw;
         width: var(--containerSize);
@@ -277,7 +277,7 @@ html {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 50rem) {
     .inventory_title {
         margin: 2rem 0 0 2rem;
     }
@@ -286,7 +286,7 @@ html {
 
 /* Page de charme style */
 /* CSS non adaptable
-/* @media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 50rem) {
     .inventory_zone {
         background-repeat: no-repeat;
         background-image: url("../menuNav/img/charmeBg.png");
@@ -354,7 +354,7 @@ html {
     }
 } */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 50rem) {
     .inventory_zone {
         background-repeat: no-repeat;
         background-image: url("../menuNav/img/charmeBg.png");
@@ -423,7 +423,7 @@ html {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 50rem) {
     .charm_section {
         display: flex;
         flex-direction: column;
@@ -470,7 +470,7 @@ html {
 
 /* Bestiaire */
 /* CSS non adaptable */
-/*@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 50rem) {
     .bestiaire_body {
         background-color: #000000;
         background-image: url("../menuNav/img/bestiaireBg.png");
@@ -553,7 +553,7 @@ html {
     }
 }*/
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 50rem) {
     .bestiaire_body {
         background-color: #000000;
         background-image: url("../menuNav/img/bestiaireBg.png");
@@ -664,7 +664,7 @@ html {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 50rem) {
     .bestiaire_section {
         overflow: hidden;
         width: 25rem;
@@ -690,7 +690,7 @@ html {
 
 /* Inventaire */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 50rem) {
     .inventory_section {
         background-color: #000000;
         background-image: url("../menuNav/img/inventoryBg.png");
