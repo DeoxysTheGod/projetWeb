@@ -22,31 +22,9 @@ h1, h2, h3, h4, h5, h6, a {
     font-family: "Trajan";
 }
 
-.title1 {
-    font-size: 2.5vw;
-}
-
-.title {
-    font-size: 2vw;
-}
-
 .header_nav {
     margin: 2.5vw;
 }
-
-
-.basic_text {
-    font-size: 1.5vw;
-    color : #f4f2f2;
-    padding: 2.5vw; 
-    text-align: justify;
-    margin-bottom: 1vw;
-    line-height: 2vw;
-    background-color: #1d1b1a;
-    border: rgba(255, 162, 0, 0.899) 0.1vw inset;
-    border-radius: 1vw 1vw 1vw 1vw;
-    margin: 2vw; 
-} 
 
 html {
     height: 100%;
@@ -187,15 +165,38 @@ html {
     background-attachment: fixed;
 }
 
+.game_menu_body .basic_text {
+    font-size: var(--inventoryInformationSize);
+    color : #f4f2f2;
+    padding: 2.5vw; 
+    text-align: justify;
+    margin: 2vw 2vw 1vw 2vw; 
+    line-height: 2vw;
+    background-color: #1d1b1a;
+    border: rgba(255, 162, 0, 0.899) 0.1vw inset;
+    border-radius: 1vw 1vw 1vw 1vw;
+    height: fit-content;
+} 
 
-.game_menu_body > section h1 {
+.title1 {
+    font-size: 2.5vw;
+}
+
+.title {
+    font-size: 2vw;
+}
+
+.game_menu_body .game_title {
+    width: 70%;
+}
+
+.game_menu_body section h1 {
     text-align: center;
 }
 
-.game_menu_body > section img {
+.game_menu_body section img {
     display: block;
     margin: auto;
-    width: 40width;
 }
 
 .game_menu_body > section {
@@ -218,17 +219,14 @@ html {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 10rem;
+    width: 30rem;
 }
 
 .game_article li {
-    padding-right: 2rem ;
-    
-
+    padding-right: 4rem ;
 }
 
 .game_article .game_li_img {
-    margin-left: 0;
-    padding-right: 2rem ;
     height: 10rem;
 }
 
