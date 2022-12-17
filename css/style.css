@@ -5,6 +5,7 @@
 }
 
 :root {
+    --titleSize: 3vw;
     --inventoryTitleSize: 1.6vw;
     --inventoryInformationTitleSize: 1.56vw;
     --inventoryInformationSize: 1.25vw;
@@ -668,25 +669,54 @@ html {
 
 @media screen and (max-width: 50rem) {
     .bestiaire_section {
-        overflow: hidden;
-        width: 25rem;
-        padding-top: 2rem;
-    }
-
-    .bestiaire_section li {
         display: flex;
-        align-items: center;
-        margin: 2px 0 2px 0;
-        padding: 1rem 0 1rem 2rem;
-        width: 22rem;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 2vw;
     }
 
     .bestiaire_section .info_bestiaire_1 {
         display: none;
     }
 
-    .bestiaire_section .info_bestiaire_2 {
+    .bestiaire_section h2 {
         display: none;
+    }
+
+    .bestiaire_section li {
+        border-top: 2px solid white;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding-top: 1.5rem;
+        margin: 1rem;
+    }
+
+    .bestiaire_section li img {
+        order: -3;
+        display: block;
+        width: 10vw;
+    }
+
+    .bestiaire_section li p {
+        order: -1;
+        width: 100%;
+        margin-top: 1vw;
+        font-size: var(--inventoryInformationSizePhone);
+    }
+
+    .bestiaire_section a {
+        order: -2;
+        margin-left: 2vw;
+        font-weight: bold;
+        font-size: var(--inventoryInformationTitleSizePhone);
+        color: rgb(201, 201, 201);
+    }
+
+    .bestiaire_section li .info_bestiaire_2 img {
+        padding: 1.25vw 0 1.25vw 0;
+        margin: auto;
+        width: 70%;
     }
 }
 
@@ -912,7 +942,7 @@ html {
 /* général */
 
 h1 {
-    font-size: 3vw;
+    font-size: var(--titleSize);
 }
 
 li {
