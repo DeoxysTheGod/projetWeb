@@ -8,8 +8,9 @@
     --inventoryTitleSize: 1.6vw;
     --inventoryInformationTitleSize: 1.56vw;
     --inventoryInformationSize: 1.25vw;
-    --inventoryInformationTitleSizePhone: 3vw;
-    --inventoryInformationSizePhone: 4vw;
+    --inventoryTitleSizePhone: 5vw;
+    --inventoryInformationTitleSizePhone: 4vw;
+    --inventoryInformationSizePhone: 3.5vw;
 }
 
 body {
@@ -275,9 +276,12 @@ html {
     }
 }
 
+
+
 @media screen and (max-width: 50rem) {
     .inventory_title {
-        margin: 2rem 0 0 2rem;
+        font-size: var(--inventoryTitleSizePhone);
+        margin: 2vw 0 0 2vw;
     }
 }
 
@@ -426,7 +430,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 2rem;
+        padding-top: 2vw;
     }
 
     .info_charm {
@@ -445,19 +449,19 @@ html {
     .info_charm > h2 {
         order: 2;
         font-size: var(--inventoryInformationTitleSizePhone);
-        margin-left: 1rem;
+        margin-left: 1vw;
     }
 
     .info_charm > img {
         order: 1;
         display: block;
-        width: 40px;
+        width: 10vw;
     }
 
     .info_charm > p {
         order: 3;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 1vw;
         font-size: var(--inventoryInformationSizePhone);
     }
 
@@ -599,11 +603,11 @@ html {
 
     .info_bestiaire_2 > h2 {
         font-size: var(--inventoryInformationTitleSize);
-        padding: 0 0 20px 0;
+        padding: 0 0 1.25vw 0;
     }
 
     .bestiaire_section .info_bestiaire_2 > img {
-        padding: 0 0 20px 0;
+        padding: 0 0 1.25vw 0;
         width: 70%;
     }
 
@@ -692,27 +696,50 @@ html {
     .inventory_section {
         background-color: #000000;
         background-image: url("../menuNav/img/inventoryBg.png");
+        background-size: 100%;
         background-repeat: no-repeat;
     }
 
     .inventory_information {
         position: fixed;
-        margin: 20px;
-        top: 12rem;
-        left: 82rem;
-        height: 30rem;
-        width: 28rem;
+        margin: 1.25vw;
+        top: 12vw;
+        right: 6.5vw;
+        height: 30vw;
+        width: 25vw;
         display: none;
         align-items: center;
         flex-direction: column;
     }
 
     .spell_information img {
-        width: 28rem;
+        width: 20vw;
+    }
+
+    .spell_information > h2 {
+        font-size: var(--inventoryInformationTitleSize);
+        padding: 0 0 1.25vw 0;
+    }
+
+    .spell_information > p {
+        padding: 0.625vw;
+        font-size: var(--inventoryInformationSize);
+        height: 15vw;
     }
 
     .skill_information img {
-        width: 10rem;
+        width: 9vw;
+    }
+
+    .skill_information > h2 {
+        font-size: var(--inventoryInformationTitleSize);
+        padding: 0 0 1.25vw 0;
+    }
+
+    .skill_information > p {
+        padding: 0.625vw;
+        font-size: var(--inventoryInformationSize);
+        height: 15vw;
     }
 
     li:hover .inventory_information {
@@ -723,9 +750,9 @@ html {
     .dream_nail {
         position: absolute;
         display: block;
-        width: 32rem;
-        top: 13rem;
-        left: 29rem;
+        width: fit-content;
+        top: 11vw;
+        left: 24vw;
     }
 
     .dream_nail ul {
@@ -734,35 +761,35 @@ html {
     }
 
     .dream_nail .skill_img {
-        height: 10rem;
+        height: 9vw;
     }
 
     .dream_nail a:hover {
-        filter: drop-shadow(0 0 0.5rem #68aafd);
+        filter: drop-shadow(0 0 0.5vw #68aafd);
     }
 
     .skills {
         position: absolute;
         display: block;
-        width: 32rem;
-        top: 12rem;
-        left: 45rem;
+        width: 27.5vw;
+        top: 12vw;
+        left: 37vw;
     }
 
     .skills .skill_img {
-        height: 6rem;
+        height: 5.5vw;
     }
 
     .skills > ul {
         width: inherit;
         display: grid;
         grid-template-columns: repeat(4, auto);
-        grid-row-gap: 2rem;
+        grid-row-gap: 2vw;
         justify-items: center;
     }
 
     .skills a:hover {
-        filter: drop-shadow(0 0 0.5rem #68aafd);
+        filter: drop-shadow(0 0 0.5vw #68aafd);
     }
 
     /* Sort */
@@ -770,13 +797,13 @@ html {
         position: absolute;
         position: absolute;
         display: block;
-        width: 9rem;
-        top: 29.5rem;
-        left: 27rem;
+        width: 9vw;
+        top: 24vw;
+        left: 21.75vw;
     }
 
     .spells .spell_img {
-        width: 5.5rem;
+        width: 5vw;
     }
 
     .spells #spell_2 {
@@ -790,7 +817,7 @@ html {
     }
 
     .spells #spell_4 {
-        margin-top: 1rem;
+        margin-top: 1vw;
         grid-row: 3;
         grid-column: 2;
     }
@@ -810,14 +837,82 @@ html {
     }
 
     .spells a:hover {
-        filter: drop-shadow(0 0 0.5rem #68aafd);
+        filter: drop-shadow(0 0 0.5vw #68aafd);
+    }
+
+    .spell_information h2 a, .skill_information h2 a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .spell_img {
+        display: none;
+    }
+
+    .skill_img {
+        display: none;
+    }
+
+    .spells {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 2vw;
+    }
+
+    .dream_nail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 2vw;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 2vw;
+    }
+
+    .inventory_information {
+        border-top: 2px solid white;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding-top: 1.5rem;
+        margin: 1rem;
+    }
+
+    .inventory_information> h2 {
+        order: 2;
+        font-size: var(--inventoryInformationTitleSizePhone);
+        margin-left: 1vw;
+    }
+
+    .inventory_information > img {
+        order: 1;
+        display: block;
+        width: 10vw;
+    }
+
+    .inventory_information > p {
+        order: 3;
+        width: 100%;
+        margin-top: 1vw;
+        font-size: var(--inventoryInformationSizePhone);
+    }
+
+    .spell_information h2 a, .skill_information h2 a {
+        color: rgb(201, 201, 201);
     }
 }
 
 /* général */
 
 h1 {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 li {
