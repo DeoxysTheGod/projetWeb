@@ -178,89 +178,176 @@ html {
     background-attachment: fixed;
 }
 
-.basic_text {
-    color : #f4f2f2;
-    padding: 2.5vw; 
-    margin: 2vw 2vw 1vw 2vw; 
-    line-height: 2vw;
-    background-color: #1d1b1a;
-    border: rgba(255, 162, 0, 0.899) 0.1vw inset;
-    border-radius: 1vw 1vw 1vw 1vw;
-} 
+@media screen and (min-width: 50rem) {
+    .basic_text {
+        color : #f4f2f2;
+        padding: 2.5vw; 
+        margin: 2vw 2vw 1vw 2vw; 
+        background-color: #1d1b1a;
+        border: rgba(255, 162, 0, 0.899) 0.1vw inset;
+        border-radius: 1vw 1vw 1vw 1vw;
+    } 
 
-.title1 {
-    text-align: center;
-    margin: 8vw 0 4vw 0;
-    font-size: 4vw;
+    .title1 {
+        text-align: center;
+        margin: 8vw 0 4vw 0;
+        font-size: 4vw;
+    }
+
+    .title2 {
+        font-size: 2vw;
+        margin: 2vw 0 2vw 0;
+    }
+
+    .game_menu_body .game_title {
+        width: 70%;
+    }
+
+    .game_menu_body section img {
+        display: block;
+        margin: auto;
+    }
+
+    .game_menu_body > section {
+        margin: 3.5vw;
+    }
+
+    .game_menu_body > section p {
+        font-size: 2.5vw;
+    }
+
+    .game_article {
+        margin: 2vw 0 2vw 0;
+        display: block;
+        height: fit-content;
+    }
+
+    #game_support {
+        font-size: 1.5vw;
+        margin: 2vw 0 2vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 15vw;
+        width: 30vw;
+    }
+
+    #game_support img {
+        height: 15vw;
+    }
+
+    #goodies_box {
+        display: flex;
+        gap: 6vw;
+        height: fit-content;
+        margin: 2vw 0 2vw 0;
+    }
+
+    #goodies_box img {
+        width: 20vw;
+    }
+
+    #dlc_box {
+        display: flex;
+        justify-content: space-between;
+        margin: 2vw 0 2vw 0;
+    }
+
+    #dlc_box img {
+        width: 18vw;
+    }
+
+    .game_menu_body section .trailer {
+        margin: 3vw 0 3vw 0;
+        width: 50vw;
+    }
 }
 
-.title2 {
-    font-size: 2vw;
-    margin: 2vw 0 2vw 0;
-}
+@media screen and (max-width: 50rem) {
+    .title1 {
+        text-align: center;
+        margin: 8vw 0 4vw 0;
+        font-size: 6vw;
+    }
 
-.game_menu_body .game_title {
-    width: 70%;
-}
+    .title2 {
+        font-size: 4vw;
+        margin: 2vw 0 2vw 0;
+    }
 
-.game_menu_body section img {
-    display: block;
-    margin: auto;
-}
+    .game_menu_body .game_title {
+        width: 95%;
+    }
 
-.game_menu_body > section {
-    margin: 3.5vw;
-}
+    .game_menu_body section img {
+        display: block;
+        margin: auto;
+    }
 
-.game_menu_body > section p {
-    font-size: 2.5vw;
-}
+    .game_menu_body > section {
+        font-size: 4vw;
+        margin: 3.5vw;
+    }
 
-.game_article {
-    margin: 2vw 0 2vw 0;
-    display: block;
-    height: fit-content;
-}
+    .game_article {
+        margin: 2vw 0 2vw 0;
+        display: block;
+        height: fit-content;
+    }
 
-#game_support {
-    font-size: 1.5vw;
-    margin: 2vw 0 2vw 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 15vw;
-    width: 30vw;
-}
+    #game_support {
+        margin: 2vw 0 2vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 25vw;
+        width: fit-content;
+    }
 
-#game_support img {
-    height: 15vw;
-}
+    #game_support li {
+        margin-right: 8vw;
+    }
 
-#goodies_box {
-    display: flex;
-    gap: 6vw;
-    height: fit-content;
-    margin: 2vw 0 2vw 0;
-}
+    #game_support img {
+        height: 25vw;
+    }
 
-#goodies_box img {
-    width: 20vw;
-}
+    #goodies_box {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        margin: 2vw auto 2vw auto;
+    }
 
-#dlc_box {
-    display: flex;
-    justify-content: space-between;
-    margin: 2vw 0 2vw 0;
-}
+    #goodies_box img {
+        width: 35vw;
+    }
 
-#dlc_box img {
-    width: 18vw;
-}
+    #dlc_box {
+        display: flex;
+        justify-content: space-between;
+        margin: 2vw 0 2vw 0;
+    }
 
-.game_menu_body section .trailer {
-    margin: 3vw 0 3vw 0;
-    width: 50vw;
+    #dlc_box img {
+        width: 18vw;
+    }
+
+    .game_menu_body section .trailer {
+        margin: 3vw 0 3vw 0;
+        width: 100%;
+    }
+
+    .basic_text {
+        color : #f4f2f2;
+        padding: 2.5vw; 
+        margin: 2vw 2vw 1vw 2vw; 
+        background-color: #1d1b1a;
+        border: rgba(255, 162, 0, 0.899) 0.1vw inset;
+        border-radius: 1vw 1vw 1vw 1vw;
+    } 
 }
 
 /* Inventaire général */
