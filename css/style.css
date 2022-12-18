@@ -186,6 +186,7 @@ html {
         background-color: #1d1b1a;
         border: rgba(255, 162, 0, 0.899) 0.1vw inset;
         border-radius: 1vw 1vw 1vw 1vw;
+        text-align: justify;
     } 
 
     .title1 {
@@ -348,6 +349,7 @@ html {
         background-color: #1d1b1a;
         border: rgba(255, 162, 0, 0.899) 0.1vw inset;
         border-radius: 1vw 1vw 1vw 1vw;
+        text-align: justify;
     } 
 }
 
@@ -1071,3 +1073,9 @@ li {
     text-shadow: 0 0 0.5rem #ffffff;
 }
 
+/* formulaire */
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+}
