@@ -258,7 +258,7 @@ html {
         width: 18vw;
     }
 
-    .game_menu_body section .trailer {
+    .trailer {
         margin: 3vw 0 3vw 0;
         width: 50vw;
     }
@@ -316,34 +316,35 @@ html {
 
     #goodies_box {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         height: fit-content;
-        margin: 2vw auto 2vw auto;
+        margin: 6vw auto 6vw auto;
     }
 
     #goodies_box img {
-        width: 35vw;
+        width: 40vw;
     }
 
     #dlc_box {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        margin: 2vw 0 2vw 0;
+        margin: 6vw 0 6vw 0;
     }
 
     #dlc_box img {
-        width: 18vw;
+        width: 80%;
     }
 
-    .game_menu_body section .trailer {
-        margin: 3vw 0 3vw 0;
+    .trailer {
+        margin: 6vw 0 6vw 0;
         width: 100%;
     }
 
     .basic_text {
         color : #f4f2f2;
         padding: 2.5vw; 
-        margin: 2vw 2vw 1vw 2vw; 
+        margin: 6vw 0 6vw 0; 
         background-color: #1d1b1a;
         border: rgba(255, 162, 0, 0.899) 0.1vw inset;
         border-radius: 1vw 1vw 1vw 1vw;
