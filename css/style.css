@@ -989,10 +989,9 @@ input[type="radio"] {
 
 /* Carte */
 #map_body {
-    background-image: url("../img/menuTheme.png");
+    background-image: url("../menuNav/img/inventoryBg.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
+    background-size: 100%;
     background-attachment: fixed;
 }
 
