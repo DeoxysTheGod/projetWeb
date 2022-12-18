@@ -1079,3 +1079,14 @@ li {
     display: flex;
     flex-direction: column;
 }
+
+.formulaire {
+    width: auto;
+    height: auto;
+    color : #f4f2f2;
+    padding: 2.5vw; 
+    margin: 2vw 2vw 1vw 2vw; 
+    background-color: #1d1b1a;
+    border: rgba(255, 162, 0, 0.899) 0.1vw inset;
+    border-radius: 1vw 1vw 1vw 1vw;
+}
