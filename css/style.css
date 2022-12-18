@@ -178,17 +178,14 @@ html {
     background-attachment: fixed;
 }
 
-.game_menu_body .basic_text {
-    font-size: var(--inventoryInformationSize);
+.basic_text {
     color : #f4f2f2;
     padding: 2.5vw; 
-    text-align: justify;
     margin: 2vw 2vw 1vw 2vw; 
     line-height: 2vw;
     background-color: #1d1b1a;
     border: rgba(255, 162, 0, 0.899) 0.1vw inset;
     border-radius: 1vw 1vw 1vw 1vw;
-    height: fit-content;
 } 
 
 .title1 {
@@ -216,11 +213,11 @@ html {
 }
 
 .game_menu_body > section p {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
 }
 
 .game_article {
-    margin: 1vw 0 1vw 0;
+    margin: 2vw 0 2vw 0;
     display: block;
     height: fit-content;
 }
@@ -240,19 +237,25 @@ html {
     height: 15vw;
 }
 
-#goodies-box {
+#goodies_box {
     display: flex;
     gap: 6vw;
     height: fit-content;
     margin: 2vw 0 2vw 0;
 }
 
-.dlc {
-    height: 18vw;
+#goodies_box img {
+    width: 20vw;
 }
 
-.game_box {
-    height: 20rem;
+#dlc_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 0 2vw 0;
+}
+
+#dlc_box img {
+    width: 18vw;
 }
 
 .game_menu_body section .trailer {
