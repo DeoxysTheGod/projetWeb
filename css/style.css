@@ -70,7 +70,7 @@ html {
 @media screen and (max-width: 50rem) {
     .header_nav ul li {
         float: left;
-        width: 40vw;
+        width: 33vw;
         text-align: center;
         position: relative;
     }
@@ -529,6 +529,16 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 50rem) {
+    #charm_body {
+        background-color: #000000;
+        background-image: url("../img/menuThemeGodmaster.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: brightness(40%);
+        background-position-x: center;
+        background-attachment: fixed;
+    }
+
     .charm_section {
         display: flex;
         flex-direction: column;
@@ -687,6 +697,15 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 50rem) {
+    #bestiaire_body {
+        background-color: #000000;
+        background-image: url("../img/menuTheme.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: brightness(40%);
+        background-position-x: center;
+        background-attachment: fixed;
+    }
     .bestiaire_section {
         display: flex;
         flex-direction: column;
@@ -742,7 +761,7 @@ input[type="radio"] {
 /* Inventaire */
 
 @media screen and (min-width: 50rem) {
-    .inventory_body {
+    #inventory_body {
         background-color: #000000;
         background-image: url("../menuNav/img/inventoryBg.png");
         background-size: 100%;
@@ -896,6 +915,16 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 50rem) {
+    #inventory_body {
+        background-color: #000000;
+        background-image: url("../img/menuThemeTheGrimmTroupe.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: brightness(40%);
+        background-position-x: center;
+        background-attachment: fixed;
+    }
+
     .spell_img {
         display: none;
     }
