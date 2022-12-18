@@ -401,17 +401,18 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1vw;
-}
-
-.formulaire {
     width: auto;
     height: auto;
     color : #f4f2f2;
     padding: 2.5vw; 
-    margin: 2vw 2vw 1vw 2vw; 
+    margin: 2vw; 
     background-color: #1d1b1aa9;
     border: rgba(246, 9, 68, 0.899) 0.1vw inset;
     border-radius: 1vw 1vw 1vw 1vw;
+}
+
+input[type="radio"] {
+    width: fit-content;
 }
 
 /* Inventaire général */
