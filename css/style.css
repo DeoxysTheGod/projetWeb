@@ -987,6 +987,36 @@ input[type="radio"] {
     }
 }
 
+/* Carte */
+#map_body {
+    background-image: url("../img/menuTheme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+
+#map_body section {
+    margin: 2vw;
+}
+
+.map {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin: 2vw;
+}
+
+@media screen and (max-width: 50rem) {
+    #map_body {
+        background-color: #000000;
+        background-image: url("../img/menuTheme.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-attachment: fixed;
+    }
+}
 /* général */
 
 h1 {
