@@ -988,22 +988,27 @@ input[type="radio"] {
 }
 
 /* Carte */
-#map_body {
-    background-image: url("../menuNav/img/inventoryBg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-}
+@media screen and (min-width: 50rem) {
+    #map_body {
+        background-image: url("../menuNav/img/bestiaireBg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
 
-#map_body section {
-    margin: 2vw;
-}
+    #map_body section {
+        margin: 2vw;
+    }
 
-.map {
-    display: block;
-    margin: auto;
-    width: 90%;
-    margin: 2vw;
+    .map {
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 20vw;
+        top: 7vw;
+        width: 60%;
+        margin: 2vw;
+    }
 }
 
 @media screen and (max-width: 50rem) {
@@ -1014,6 +1019,21 @@ input[type="radio"] {
         background-size: cover;
         background-position-x: center;
         background-attachment: fixed;
+        backdrop-filter: brightness(40%);
+        height: 100%;
+    }
+
+    #map_body section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 2vw;
+    }
+
+    .map {
+        margin: auto;
+        margin-top: 6vw;
+        width: 100%;
     }
 }
 /* général */
