@@ -167,15 +167,52 @@ html {
     }
 }
 
+.basic_text {
+    background-color: #1d1b1aa9;
+}
+/* Histoire */
+
+#history_body {
+    background-color: #000000;
+    background-image: url("../img/menuThemeBlue.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    padding-bottom: 4vw;
+}
+
+#history_body .title1 {
+    margin-top: 4vw;
+}
+
+#history_body .title2 {
+    margin-top: 0;
+}
+
+#history_body p {
+    margin: 0 0 1vw 0;
+}
+
+#history_body .basic_text {
+    color : #f4f2f2;
+    padding: 2.5vw; 
+    margin: 2vw 2vw 1vw 2vw; 
+    border: rgba(27, 118, 255, 0.750) 0.1vw inset;
+    border-radius: 1vw 1vw 1vw 1vw;
+    text-align: justify;
+} 
+
 /* Jouer */
 
-.game_menu_body {
+#game_menu_body {
     background-color: #000000;
     background-image: url("../img/menuThemeGodmaster.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
+    padding-bottom: 4vw;
 }
 
 @media screen and (min-width: 50rem) {
@@ -183,7 +220,6 @@ html {
         color : #f4f2f2;
         padding: 2.5vw; 
         margin: 2vw 2vw 1vw 2vw; 
-        background-color: #1d1b1a;
         border: rgba(255, 162, 0, 0.899) 0.1vw inset;
         border-radius: 1vw 1vw 1vw 1vw;
         text-align: justify;
@@ -200,20 +236,20 @@ html {
         margin: 2vw 0 2vw 0;
     }
 
-    .game_menu_body .game_title {
+    #game_menu_body .game_title {
         width: 70%;
     }
 
-    .game_menu_body section img {
+    #game_menu_body section img {
         display: block;
         margin: auto;
     }
 
-    .game_menu_body > section {
+    #game_menu_body > section {
         margin: 3.5vw;
     }
 
-    .game_menu_body > section p {
+    #game_menu_body > section p {
         font-size: 2.5vw;
     }
 
@@ -277,16 +313,16 @@ html {
         margin: 2vw 0 2vw 0;
     }
 
-    .game_menu_body .game_title {
+    #game_menu_body .game_title {
         width: 95%;
     }
 
-    .game_menu_body section img {
+    #game_menu_body section img {
         display: block;
         margin: auto;
     }
 
-    .game_menu_body > section {
+    #game_menu_body > section {
         font-size: 4vw;
         margin: 3.5vw;
     }
@@ -346,11 +382,36 @@ html {
         color : #f4f2f2;
         padding: 2.5vw; 
         margin: 6vw 0 6vw 0; 
-        background-color: #1d1b1a;
         border: rgba(255, 162, 0, 0.899) 0.1vw inset;
         border-radius: 1vw 1vw 1vw 1vw;
         text-align: justify;
     } 
+}
+
+/* formulaire */
+
+#formulary_body {
+    background-image: url("../img/menuThemeTheGrimmTroupe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.formulaire {
+    width: auto;
+    height: auto;
+    color : #f4f2f2;
+    padding: 2.5vw; 
+    margin: 2vw 2vw 1vw 2vw; 
+    background-color: #1d1b1aa9;
+    border: rgba(246, 9, 68, 0.899) 0.1vw inset;
+    border-radius: 1vw 1vw 1vw 1vw;
 }
 
 /* Inventaire général */
@@ -396,77 +457,9 @@ html {
 
 
 /* Page de charme style */
-/* CSS non adaptable
-/* @media screen and (min-width: 50rem) {
-    .inventory_zone {
-        background-repeat: no-repeat;
-        background-image: url("../menuNav/img/charmeBg.png");
-        background-position-x: left;
-        background-color: #000000;
-    }
-
-    .charm_section {
-        position: relative;
-        top: 450px;
-        left: 170px;
-        display: grid;
-        width: fit-content;
-        grid-template-columns: repeat(10, 93px);
-        grid-template-rows: 1fr repeat(4, auto);
-    }
-
-    .info_charm h2 a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .inventory_charm {
-        height: 85px;
-    }
-
-    .charm_odd {
-        padding-left: 50px;
-    }
-
-    .inventory_charm:hover {
-        filter: drop-shadow(0 0 0.5rem #68aafd);
-    }
-
-    .charm_section .info_charm {
-        position: fixed;
-        margin: 20px;
-        top: 12rem;
-        left: 75rem;
-        height: 30rem;
-        width: 30rem;
-        display: none;
-    }
-
-    .charm_section a:hover + .info_charm {
-        display: block;
-    }
-
-    .info_charm > h2 {
-        font-size: var(--inventoryInformationTitleSize);
-        text-align: center;
-        padding: 0 0 20px 0;
-    }
-
-    .info_charm > img {
-        display: block;
-        margin: auto;
-        padding: 0 0 20px 0;
-        width: 120px;
-    }
-
-    .info_charm > p {
-        font-size: var(--inventoryInformationSize);
-        padding: 10px;
-    }
-} */
 
 @media screen and (min-width: 50rem) {
-    .inventory_zone {
+    #charm_body {
         background-repeat: no-repeat;
         background-image: url("../menuNav/img/charmeBg.png");
         background-position-x: left;
@@ -580,92 +573,9 @@ html {
 }
 
 /* Bestiaire */
-/* CSS non adaptable */
-/*@media screen and (min-width: 50rem) {
-    .bestiaire_body {
-        background-color: #000000;
-        background-image: url("../menuNav/img/bestiaireBg.png");
-        background-repeat: no-repeat;
-    }
-    
-    .bestiaire_section .info_bestiaire_2 {
-        position: fixed;
-        margin: 20px;
-        top: 12rem;
-        left: 82rem;
-        height: 30rem;
-        width: 28rem;
-        display: none;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .bestiaire_section .info_bestiaire_1 {
-        display: flex;
-        background: radial-gradient(closest-side, #68abfd6f, #68abfd47, #68abfd1b, #68abfd0b, transparent);
-        position:fixed;
-        margin: 20px;
-        top: 11.5rem;
-        left: 36rem;
-        height: 40.5rem;
-        width: 40.5rem;
-        display: none;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bestiaire_section .info_bestiaire_1 > img {
-        width: max-content;
-    }
-
-    .bestiaire_section li:hover .info_bestiaire_2 {
-        display: flex;
-    }
-
-    .bestiaire_section li:hover .info_bestiaire_1 {
-        display: flex;
-    }
-
-    .info_bestiaire_2 > h2 {
-        font-size: var(--inventoryInformationTitleSize);
-        padding: 0 0 20px 0;
-    }
-
-    .info_bestiaire_2 > img {
-        padding: 0 0 20px 0;
-        width: 70%;
-    }
-
-    .info_bestiaire_2 > p {
-        padding: 10px;
-        font-size: var(--inventoryInformationSize);
-        height: 15rem;
-    }
-
-    .bestiaire_section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        top: 80px;
-        left: 160px;
-        height: 750px;
-        width: fit-content;
-        overflow: hidden;   
-        overflow-y: scroll;
-    }
-
-    .bestiaire_section li {
-        display: flex;
-        align-items: center;
-        margin: 2px 0 2px 0;
-        padding: 1rem 0 1rem 2rem;
-        width: 22rem;
-    }
-}*/
 
 @media screen and (min-width: 50rem) {
-    .bestiaire_body {
+    #bestiaire_body {
         background-color: #000000;
         background-image: url("../menuNav/img/bestiaireBg.png");
         background-repeat: no-repeat;
@@ -831,7 +741,7 @@ html {
 /* Inventaire */
 
 @media screen and (min-width: 50rem) {
-    .inventory_section {
+    .inventory_body {
         background-color: #000000;
         background-image: url("../menuNav/img/inventoryBg.png");
         background-size: 100%;
@@ -1071,22 +981,4 @@ li {
 
 .game_menu > li > a:hover {
     text-shadow: 0 0 0.5rem #ffffff;
-}
-
-/* formulaire */
-
-.formulaire {
-    display: flex;
-    flex-direction: column;
-}
-
-.formulaire {
-    width: auto;
-    height: auto;
-    color : #f4f2f2;
-    padding: 2.5vw; 
-    margin: 2vw 2vw 1vw 2vw; 
-    background-color: #1d1b1a;
-    border: rgba(255, 162, 0, 0.899) 0.1vw inset;
-    border-radius: 1vw 1vw 1vw 1vw;
 }
